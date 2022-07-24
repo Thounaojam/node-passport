@@ -1,0 +1,13 @@
+<% if (messages.error) {%>
+  <%= messages.error %>
+<%}%>
+<form method="POST" action="login">
+    <label>Name
+      <input name="name" required>
+    </label>
+    <label>Password
+      <input type="password" name="password" required>
+    </label>
+    <button type="submit">Login</button>
+</form>
+<a href="/register">Register</a>
